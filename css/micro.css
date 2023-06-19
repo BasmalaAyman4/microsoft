@@ -1,0 +1,378 @@
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+header .navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navi .logo {
+    width: 100px;
+}
+
+.navi ul.main-menu {
+    flex: 1;
+
+}
+
+header .navi .main-menu,
+header .navi .right-menu {
+    display: flex;
+    list-style: none;
+}
+
+header .navi .main-menu li,
+header .navi .right-menu li {
+    padding: 10px;
+    margin-left: 20px;
+
+}
+
+header .navi .main-menu li :hover,
+header .navi .right-menu li:hover {
+    border-bottom: 2px solid #333;
+
+}
+
+header .navi .main-menu li a,
+header .navi .right-menu li a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+
+
+
+@media (max-width:768px) {
+    .navi ul.main-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 25%;
+        padding: 30px;
+        width: 15%;
+        height: 100%;
+        background: #f2f2f2;
+        border-right: #eee 1px solid;
+        transform: translateX(-500px);
+        -webkit-transform: translateX(-500px);
+        -moz-transform: translateX(-500px);
+        -ms-transform: translateX(-500px);
+        -o-transform: translateX(-500px);
+    }
+
+    .navi .main-menu li:not(:last-child) {
+        padding: 10px;
+        border-bottom: #eee solid 1px;
+        font-size: 14px;
+    }
+
+    .navi ul.right-menu {
+        margin-right: 50px;
+    }
+}
+
+.landing {
+    background-image: url('https://i.ibb.co/zGSDGCL/slide1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing h1 {
+    margin-top: 60px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.landing p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.landing a {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.landing a:hover {
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.section-one {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+}
+
+.section-one .one img {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.section-one .one h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section-one .one p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.section-one .one a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0067b8;
+    text-transform: uppercase;
+}
+
+.section-one .one a:hover i {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+
+@media (max-width:768px) {
+    .section-one {
+        display: block;
+
+    }
+}
+
+.game {
+    margin-top: 30px;
+    background-image: url('https://i.ibb.co/tBJGPD9/xbox.png');
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 50px;
+}
+
+.game h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.game p {
+    font-size: 20px;
+    width: 40%;
+    margin-bottom: 25px;
+}
+
+.game a {
+    background-color: #000;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.game a:hover {
+    background-color: rgba(0, 0, 0, 0.493);
+
+}
+
+.game a:hover i {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+
+@media (max-width:768px) {
+    .game p {
+        display: none;
+
+    }
+
+    .game h3 {
+        margin-left: -10px;
+    }
+}
+
+.micro {
+    margin-top: 30px;
+    background-image: url('https://i.ibb.co/72cgtsz/carbon.jpg');
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 30px;
+    color: white;
+
+}
+
+.micro h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.micro p {
+    font-size: 20px;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.micro a {
+    background-color: white;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.micro a:hover {
+    background-color: rgba(255, 255, 255, 0.493);
+
+}
+
+@media (max-width:768px) {
+    .micro p {
+        width: 70%;
+    }
+
+}
+
+.follow {
+    margin: 25px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.links,
+footer {
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    gap: 100px;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width:768px) {
+
+    .links,
+    footer {
+        display: none;
+    }
+}
+
+.bar {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: none;
+}
+
+
+
+@media(max-width: 768px) {
+    .bar {
+        display: block;
+    }
+
+    .bar:hover {
+        opacity: 0.5;
+    }
+}
